@@ -27,6 +27,34 @@ section {
   text-align: center;
 }
 
+.fa.fa-angle-down {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 50px;
+  font-size: 3rem;
+  color: black;
+}
+
+.fa.fa-angle-up {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 50px;
+  font-size: 3rem;
+  color: black;
+}
+
 /* ---------- Navbar styling below ----------*/
 nav li {
   text-align: right;
@@ -51,9 +79,21 @@ nav a {
   width: 100vw;
 }
 
-#logo {
+#logo-home {
   width: 250px;
   height: 250px;
+}
+
+#home > .icon-block > .fa.fa-angle-down {
+  font-weight: bold;
+}
+
+
+/* ---------- About us styling below ----------*/
+
+#logo-pages {
+  width: 100px;
+  height: 100px;
 }
 
 #aboutus {
@@ -66,6 +106,23 @@ nav a {
   width: 100vw;
 }
 
+#aboutus > .content {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 50px;
+  text-align: left;
+  line-height: 1.5;
+  border-radius: 25px;
+}
+
+#aboutus > .icon-block > .fa.fa-angle-down,
+#aboutus > .icon-block > .fa.fa-angle-up {
+  color: white;
+  font-weight: bold;
+}
+
 #menu {
   background: url(images/duo-menu.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -74,18 +131,4 @@ nav a {
   background-size: cover;
   height: 100vh;
   width: 100vw;
-}
-
-.fa.fa-angle-down {
-  position: absolute;
-  left: 50%;
-  right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 50px;
-  font-size: 3rem;
-  color: black;
 }
