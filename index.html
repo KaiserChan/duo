@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
@@ -26,21 +27,38 @@
             <span class="cd-label">About Us</span>
           </a>
         </li>
+        <li>
+          <a href="#menu">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Menu</span>
+          </a>
+        </li>
       </ul>
     </nav>
 
     <!-- Main below -->
     <main>
-      <div id="home" class="section">
-        <div class="Content">
+      <section id="home">
+        <div class="content">
+          <img id="logo" src="css/images/duo-logo.jpg" alt="logo">
           <h1>Everyone loves Duo</h1>
         </div>
-      </div>
-      <div id="aboutus" class="section">
+        <a href="#aboutus" class="icon-block">
+          <i class="fa fa-angle-down"></i>
+        </a>
+      </section>
+
+      <section id="aboutus">
         <div class="content">
           <p>We love cake, and coffee.</p>
         </div>
-      </div>
+      </section>
+
+      <section id="menu">
+        <div class="content">
+          <p>Our awesome goodies</p>
+        </div>
+      </section>
     </main>
 
   </body>

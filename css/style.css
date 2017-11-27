@@ -9,25 +9,83 @@ body {
 
 body, html {
   height: 100%;
-}
-.section {
-  min-height: 100%;
-  position: relative;
-  padding: 2em 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
+section {
+  position: relative;
+  display: block;
+  height:100%;
+  width:100%;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.content {
+  text-align: center;
+}
+
+/* ---------- Navbar styling below ----------*/
+nav li {
+  text-align: right;
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* ---------- Home section styling below ----------*/
+
 #home {
-  background: url(images/duo-home.jpg);
+  background: url(images/duo-home.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+#logo {
+  width: 250px;
+  height: 250px;
 }
 
 #aboutus {
-  background: url(images/duo-aboutus.jpg);
+  background: url(images/duo-aboutus.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+#menu {
+  background: url(images/duo-menu.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.fa.fa-angle-down {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 50px;
+  font-size: 3rem;
+  color: black;
 }
