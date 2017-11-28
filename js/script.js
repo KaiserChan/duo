@@ -3,32 +3,32 @@ $(document).ready(function() {
 // ---------- Navbar click effects below ----------
   $("#home-nav-item").click(function() {
     $('html,body').animate({
-        scrollTop: $("#home").offset().top},
-        'slow');
+      scrollTop: $("#home").offset().top},
+      'slow');
   });
 
   $("#aboutus-nav-item").click(function() {
     $('html,body').animate({
-        scrollTop: $("#aboutus").offset().top},
-        'slow');
+      scrollTop: $("#aboutus").offset().top},
+      'slow');
   });
 
   $("#menu-nav-item").click(function() {
     $('html,body').animate({
-        scrollTop: $("#menu").offset().top},
-        'slow');
+      scrollTop: $("#menu").offset().top},
+      'slow');
   });
 
   $("#gallery-nav-item").click(function() {
     $('html,body').animate({
-        scrollTop: $("#gallery").offset().top},
-        'slow');
+      scrollTop: $("#gallery").offset().top},
+      'slow');
   });
 
   $("#contactus-nav-item").click(function() {
     $('html,body').animate({
-        scrollTop: $("#contactus").offset().top},
-        'slow');
+      scrollTop: $("#contactus").offset().top},
+      'slow');
   });
 
 
@@ -42,7 +42,19 @@ $(document).ready(function() {
 
 // ---------- Arrows click effects below ----------
 
+  $('.fa-angle-up').click(function() {
+    var previousSection = $(this).closest('section').prev();
+    $('html,body').animate({
+      scrollTop: $(previousSection).offset().top},
+    'slow');
+  })
 
+  $('.fa-angle-down').click(function() {
+    var nextSection = $(this).closest('section').next();
+    $('html,body').animate({
+      scrollTop: $(nextSection).offset().top},
+    'slow');
+  })
 
 // ---------- Gallery modal effects below ----------
 
