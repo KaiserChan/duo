@@ -56,6 +56,7 @@ $(document).ready(function() {
     'slow');
   })
 
+
 // ---------- Gallery modal effects below ----------
 
   function closeModalOutside() {
