@@ -127,6 +127,7 @@ nav a.active {
 .logo-pages {
   width: 100px;
   height: 100px;
+  cursor: pointer;
 }
 
 #aboutus {

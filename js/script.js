@@ -31,7 +31,6 @@ $(document).ready(function() {
       'slow');
   });
 
-
   $('nav a').click(function() {
     document.querySelectorAll('nav a').forEach(function(e) {
       e.classList.remove('active');
@@ -39,6 +38,11 @@ $(document).ready(function() {
     this.classList.add('active');
   })
 
+  $('.logo-pages').click(function() {
+    $('html,body').animate({
+      scrollTop: $("#home").offset().top},
+      'slow');
+  })
 
 // ---------- Arrows click effects below ----------
 
