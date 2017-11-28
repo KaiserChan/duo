@@ -25,9 +25,15 @@ $(document).ready(function() {
         'slow');
   });
 
+  $("#contactus-nav-item").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#contactus").offset().top},
+        'slow');
+  });
+
+
   $('nav a').click(function() {
     document.querySelectorAll('nav a').forEach(function(e) {
-      // debugger
       e.classList.remove('active');
     })
     this.classList.add('active');
@@ -49,7 +55,6 @@ $(document).ready(function() {
     e.stopPropagation();
     $('.modal').css('display', 'block');
     $('body').click(closeModalOutside);
-    // debugger
     $('.modal-image-display').html($(this).html());
   });
 
