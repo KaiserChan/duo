@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+// ---------- Navbar click effects below ----------
   $("#aboutus-nav-item").click(function() {
     $('html,body').animate({
         scrollTop: $("#aboutus").offset().top},
@@ -17,5 +18,8 @@ $(document).ready(function() {
         scrollTop: $("#gallery").offset().top},
         'slow');
   });
+
+
+// ---------- Arrows click effects below ----------
 
 })
