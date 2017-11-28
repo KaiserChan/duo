@@ -91,6 +91,9 @@ nav a:hover {
   background: rgb(41, 41, 42);
 }
 
+nav a.active {
+  background: red;
+}
 
 /* ---------- Home section styling below ----------*/
 

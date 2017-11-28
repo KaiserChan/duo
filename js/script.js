@@ -25,6 +25,14 @@ $(document).ready(function() {
         'slow');
   });
 
+  $('nav a').click(function() {
+    document.querySelectorAll('nav a').forEach(function(e) {
+      // debugger
+      e.classList.remove('active');
+    })
+    this.classList.add('active');
+  })
+
 
 // ---------- Arrows click effects below ----------
 
