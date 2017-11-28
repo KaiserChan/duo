@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
@@ -19,27 +20,27 @@
     <nav>
       <ul>
         <li>
-          <a href="#home">
+          <a id="home-nav-item" href="#home">
             <span class="cd-dot"></span>
-            <span class="cd-label">Home</span>
+            <span class="cd-label"></span>
           </a>
         </li>
         <li>
           <a id="aboutus-nav-item" href="#aboutus">
             <span class="cd-dot"></span>
-            <span class="cd-label">About Us</span>
+            <span class="cd-label"><span>
           </a>
         </li>
         <li>
           <a id="menu-nav-item" href="#menu">
             <span class="cd-dot"></span>
-            <span class="cd-label">Menu</span>
+            <span class="cd-label"></span>
           </a>
         </li>
         <li>
           <a id="gallery-nav-item" href="#gallery">
             <span class="cd-dot"></span>
-            <span class="cd-label">Gallery</span>
+            <span class="cd-label"></span>
           </a>
         </li>
       </ul>
@@ -157,21 +158,11 @@
             <div class="gallery-image">
               <img src="css/images/duo-croissant.jpg" alt="croissant">
             </div>
-          </div>
-          <div class="grid-item-gallery">
-            <div class="gallery-image">
-              <img src="css/images/duo-croissant.jpg" alt="croissant">
-            </div>
           </div><!-- Gallery row 1 ends here -->
 
           <!-- Gallery row 2 starts here -->
           <div class="grid-item-gallery">
             <div class="gallery-image">
-              <img src="css/images/pour-coffee.jpeg" alt="pour coffee">
-            </div>
-          </div>
-          <div class="grid-item-gallery">
-            <div class="gallery-image">
               <img src="css/images/duo-croissant.jpg" alt="croissant">
             </div>
           </div>
@@ -187,11 +178,21 @@
           </div>
           <div class="grid-item-gallery">
             <div class="gallery-image">
-              <img src="css/images/duo-croissant.jpg" alt="croissant">
+              <img src="css/images/pour-coffee.jpeg" alt="pour coffee">
             </div>
           </div><!-- Gallery row 2 ends here -->
 
-          <!-- Gallery row 2 starts here -->
+          <!-- Gallery row 3 starts here -->
+          <div class="grid-item-gallery">
+            <div class="gallery-image">
+              <img src="css/images/duo-croissant.jpg" alt="croissant">
+            </div>
+          </div>
+          <div class="grid-item-gallery">
+            <div class="gallery-image">
+              <img src="css/images/duo-croissant.jpg" alt="croissant">
+            </div>
+          </div>
           <div class="grid-item-gallery">
             <div class="gallery-image">
               <img src="css/images/pour-coffee.jpeg" alt="pour coffee">
@@ -201,25 +202,22 @@
             <div class="gallery-image">
               <img src="css/images/duo-croissant.jpg" alt="croissant">
             </div>
-          </div>
-          <!-- <div class="grid-item-gallery">
-            <div class="gallery-image">
-              <img src="css/images/pour-coffee.jpeg" alt="pour coffee">
-            </div>
-          </div>
-          <div class="grid-item-gallery">
-            <div class="gallery-image">
-              <img src="css/images/duo-croissant.jpg" alt="croissant">
-            </div>
-          </div>
-          <div class="grid-item-gallery">
-            <div class="gallery-image">
-              <img src="css/images/duo-croissant.jpg" alt="croissant">
-            </div>
-          </div> -->
-          <!-- Gallery row 2 ends here -->
-
+          </div><!-- Gallery row 3 ends here -->
         </div> <!-- Menu grid ends here -->
+
+        <!-- Gallery modal starts here -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Modal content testing 123</p>
+            <div class="modal-image-display">
+
+            </div>
+          </div>
+        </div>
+
+
         <a href="#gallery" class="icon-block">
           <i class="fa fa-angle-down"></i>
         </a>
