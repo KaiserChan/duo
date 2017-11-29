@@ -384,7 +384,7 @@ nav a.active {
 #contactus > .content {
   background-color: rgba(41, 41, 42, 0.7);
   color: white;
-  width: 80%;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 50px;
   text-align: left;
@@ -463,4 +463,9 @@ nav a.active {
 .info > a > img {
   float: left;
   cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
 }
