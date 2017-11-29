@@ -156,9 +156,9 @@ nav a:hover {
 #aboutus > .content {
   background-color: rgba(41, 41, 42, 0.7);
   color: white;
-  width: 80%;
+  max-width: 1000px;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 5%;
   padding: 50px;
   text-align: left;
   line-height: 1.5;
