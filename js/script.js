@@ -44,8 +44,8 @@ $(document).ready(function() {
       'slow');
   })
 
-// ---------- Arrows click effects below ----------
 
+// ---------- Arrows click effects below ----------
   $('.fa-angle-up').click(function() {
     var previousSection = $(this).closest('section').prev();
     $('html,body').animate({
@@ -60,6 +60,32 @@ $(document).ready(function() {
     'slow');
   })
 
+
+// ---------- Scroll and navbar hightlight effects below ----------
+  // $(window).on('scroll', function() {
+  //     $('section').each(function() {
+  //         if($(window).scrollTop() >= $(this).offset().top) {
+  //             var id = $(this).attr('id');
+  //             $('nav a').removeClass('active');
+  //             // debugger
+  //             $('nav a[href=#'+ id +']').addClass('active');
+  //         }
+  //     });
+  // });
+
+  $(window).scroll(function () {
+    var position = $(this).scrollTop();
+
+    $('section').each(function() {
+        var target = $(this).offset().top;
+        var id = $(this).attr('id');
+        
+        $('navbar a').removeClass('active');
+        if (position >= target) {
+            $('nav a[id=' + id + '-nav-item]').addClass('active');
+        }
+    });
+  });
 
 // ---------- Gallery modal effects below ----------
 

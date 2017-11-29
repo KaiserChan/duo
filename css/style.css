@@ -96,7 +96,7 @@ nav a:hover {
   background: rgb(164, 165, 166);
 }
 
-nav a.active {
+.active {
   background: rgb(41, 41, 42);
 }
 
