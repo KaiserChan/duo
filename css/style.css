@@ -206,7 +206,7 @@ nav a:hover {
   padding: 10px;
 }
 
-media (min-width: 700px) {
+@media (max-width: 1000px) and (min-width: 700px) {
   .grid-container-menu {
     display: grid;
     max-width: 800px;
