@@ -133,7 +133,7 @@ nav a:hover {
 
 #aboutus {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -513,5 +513,16 @@ footer {
   #contactus > .content {
     max-width: 500px;
   }
+}
 
+@media only screen and (max-width: 1100px) {
+  .grid-container-gallery {
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    padding: 10px;
+  }
 }
