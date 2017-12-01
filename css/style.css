@@ -148,7 +148,7 @@ nav a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   opacity: 0.4;
   z-index: -1;
@@ -192,7 +192,7 @@ nav a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   opacity: 0.4;
   z-index: -1;
@@ -205,20 +205,6 @@ nav a:hover {
   grid-column-gap: 50px;
   grid-template-columns: auto auto;
   padding: 10px;
-}
-
-@media (max-width: 1000px) and (min-width: 700px) {
-  .grid-container-menu {
-    display: grid;
-    max-width: 800px;
-    margin: 0 auto;
-    /*grid-column-gap: 50px;*/
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    padding: 10px;
-    display: block;
-  }
-
 }
 
 .grid-item-drink,
@@ -261,7 +247,7 @@ nav a:hover {
 
 #gallery {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -276,7 +262,7 @@ nav a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   opacity: 0.4;
   z-index: -1;
@@ -377,7 +363,7 @@ nav a:hover {
 
 #contactus {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -392,7 +378,7 @@ nav a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   opacity: 0.4;
   z-index: -1;
@@ -485,4 +471,47 @@ nav a:hover {
 footer {
   text-align: center;
   margin-top: 50px;
+}
+
+
+/*---------- Responsive Design below ----------*/
+@media (max-width: 1100px) and (min-width: 480px) {
+  .grid-container-menu {
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+    /*grid-column-gap: 50px;*/
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding: 10px;
+    display: block;
+  }
+
+  .grid-container-contactus {
+    display: grid;
+    max-width: 700px;
+    margin: 0 auto;
+    grid-column-gap: 50px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding: 10px;
+    display: block;
+  }
+
+  .grid-item-contactus {
+    background-color: rgba(41, 41, 42, 0.7);
+    border-radius: 25px;
+    padding:20px;
+    text-align: center;
+    width: 350px;
+    margin-bottom: 25px;
+    justify-self: center;
+    margin: 0 auto 25px auto;
+    height: 450px;
+  }
+
+  #contactus > .content {
+    max-width: 500px;
+  }
+
 }
