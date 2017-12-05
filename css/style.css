@@ -387,7 +387,7 @@ nav a:hover {
 }
 
 #contactus > .content {
-  background-color: rgba(41, 41, 42, 0.7);
+  /*background-color: rgba(41, 41, 42, 0.7);*/
   color: white;
   max-width: 1000px;
   margin: 0 auto;
@@ -400,6 +400,10 @@ nav a:hover {
 
 #contactus > .icon-block > .fa.fa-angle-up {
   font-weight: bold;
+}
+
+.content > h2 {
+  color: black;
 }
 
 .grid-container-contactus {
