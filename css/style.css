@@ -270,7 +270,7 @@ nav a:hover {
 
 .grid-container-gallery {
   display: grid;
-  max-width: 950px;
+  max-width: 875px;
   margin: 0 auto;
   grid-column-gap: 25px;
   grid-template-columns: 200px 200px 200px 200px;
