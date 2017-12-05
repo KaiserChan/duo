@@ -423,14 +423,14 @@ nav a:hover {
   justify-self: center;
 }
 
-/*.map {
+.map {
   width: 100%;
   height: 100%;
-}*/
+}
 
 .map > iframe {
   width: 100%;
-  /*height: 100%;*/
+  height: 100%;
 }
 
 
@@ -553,7 +553,7 @@ footer {
 
   .map > iframe {
     width: 100%;
-    max-width: none;
+    height: 500px;
   }
 }
 
