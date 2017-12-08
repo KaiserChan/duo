@@ -584,9 +584,9 @@ footer {
 @media only screen and (max-width: 850px) {
   .grid-container-gallery {
     display: grid;
-    max-width: 450px;
+    max-width: 435px;
     margin: 0 auto;
-    grid-column-gap: 50px;
+    grid-column-gap: 35px;
     grid-template-columns: 200px 200px;
     grid-template-rows: auto auto auto auto auto auto;
     padding: 10px;
@@ -596,9 +596,9 @@ footer {
 @media only screen and (max-width: 600px) {
   .grid-container-gallery {
     display: grid;
-    max-width: 350px;
+    max-width: 325px;
     margin: 0 auto;
-    grid-column-gap: 50px;
+    grid-column-gap: 25px;
     grid-template-columns: 150px 150px;
     grid-template-rows: auto auto auto auto auto auto;
     padding: 10px;
@@ -615,6 +615,7 @@ footer {
     width: 150px;
     height: 150px;
     overflow: hidden;
+    margin-bottom: 15px;
   }
 }
 
